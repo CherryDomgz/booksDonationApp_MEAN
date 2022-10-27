@@ -1,0 +1,41 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+.info-text {
+  text-align: center;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  color: purple;
+}
+
+.catalog {
+  width: 200px;
+  height: 500px;
+  float: left;
+  box-shadow: 0 4px 8px 0 purple;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.catalog:hover {
+  box-shadow: 0 4px 8px 0 #C1E605;
+}
+
+.img {
+  width: 100%;
+  margin: auto;
+}
+
+
+
+

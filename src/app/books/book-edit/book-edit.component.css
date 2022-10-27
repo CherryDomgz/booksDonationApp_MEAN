@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: purple;
+}
+
+.edit {
+  box-shadow: 0 4px 8px 0 purple;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+.image-preview {
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+.image-preview img {
+  height: 100%;
+}
+
+.submit {
+  background-color: purple;
+  color:white
+
+}
+

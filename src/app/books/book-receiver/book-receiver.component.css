@@ -1,0 +1,58 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+.info-text {
+  text-align: center;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  color: purple;
+}
+
+.thanks {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script';
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #C1E605;
+  color: #9005E6;
+}
+
+.catalog {
+  width: 200px;
+  height: 550px;
+  float: left;
+  box-shadow: 0 4px 8px 0 purple;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.catalog:hover {
+  box-shadow: 0 4px 8px 0 #C1E605;
+}
+
+.img {
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  color: purple;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #C1E605;
+}
+
+
+

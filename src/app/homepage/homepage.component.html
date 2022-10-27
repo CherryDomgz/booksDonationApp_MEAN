@@ -1,0 +1,16 @@
+<h1>WELCOME TO LIBRO!</h1>
+
+<h2>An online site where you can donate used books or receive free books.</h2>
+
+<h3>Note: Only registered users can access this site.  </h3>
+
+<button class="donation" mat-raised-button a routerLink="/Login">Donate a Book</button>
+
+<button class="receiver" mat-raised-button a routerLink="/Login">Receive a Book</button>
+
+
+<p>AVAILABLE BOOKS</p>
+
+<mat-card class="catalog" *ngFor="let book of books">
+  <img class="img" mat-card-image [src]="book.imagePath" [alt]="book.title">
+</mat-card>

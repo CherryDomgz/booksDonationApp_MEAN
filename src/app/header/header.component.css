@@ -1,0 +1,34 @@
+mat-toolbar {
+  background-color: purple
+}
+
+.brand {
+  list-style: none;
+  text-decoration: none;
+}
+
+.brand a {
+  color: #C1E605;
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+button {
+  color: white;
+}
+

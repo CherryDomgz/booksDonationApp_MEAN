@@ -1,0 +1,23 @@
+
+<h1>GET BOOKS FOR FREE!</h1>
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<mat-card class="catalog" *ngFor="let book of books">
+  <mat-card-header>
+    <mat-card-title> {{ book.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-actions *ngIf="userIsAuthenticated">
+    <a mat-button [routerLink]="['/checkout', book.id]">GET</a>
+  </mat-card-actions>
+  <img class="img" mat-card-image [src]="book.imagePath" [alt]="book.title">
+  <mat-card-content>
+    <p> ISBN: {{ book.isbn }} </p>
+    <p> Publication Date: {{ book.publicationDate}} </p>
+    <p> Author: {{ book.author }} </p>
+    <p> Publications: {{ book.publications }} </p>
+  </mat-card-content>
+</mat-card>
+
+
+<p class="info-text mat-body-1" *ngIf="books.length <=0 && !isLoading">No books added yet!</p>
+

@@ -1,0 +1,73 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  color: purple;
+}
+
+.donate {
+  box-shadow: 0 4px 8px 0 purple;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+
+mat-spinner {
+  margin: auto;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+.image-preview {
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+.image-preview img {
+  height: 100%;
+}
+
+.submit {
+  background-color: purple;
+  color:white
+}
+
+.thanks {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script';
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #C1E605;
+  color: #9005E6;
+}
+
+.catalog {
+  width: 250px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px 0 purple;
+  margin-top: 20px;
+}
+
+.catalog:hover {
+  box-shadow: 0 4px 8px 0 #C1E605;
+}
+
+.img {
+  max-width: 100%;
+  margin: auto;
+}
+
+a {
+  color: white;
+  background-color: purple;
+  padding-left: 20px;
+}
+

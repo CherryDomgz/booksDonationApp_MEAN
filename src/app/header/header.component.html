@@ -1,0 +1,38 @@
+<mat-toolbar>
+  <span class="brand">
+    <li *ngIf="!userIsAuthenticated">
+      <a routerLink="/">LIBRO</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <a routerLink="/Home">LIBRO</a>
+    </li>
+  </span>
+  <span class="spacer"></span>
+  <ul>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button routerLink="/">Home</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <a mat-button routerLink="/Home">Home</a>
+    </li>
+      <li *ngIf="userIsAuthenticated">
+      <a mat-button routerLink="/Catalog" routerLinkActive="mat-accent">Catalog</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <a mat-button routerLink="/Donate" routerLinkActive="mat-accent">Donate</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <a mat-button routerLink="/Receive" routerLinkActive="mat-accent">Receive</a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button routerLink="/Login" routerLinkActive="mat-accent">Login</a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button routerLink="/Signup" routerLinkActive="mat-accent">Signup</a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <button mat-button (click)="onLogout()">Logout</button>
+    </li>
+
+  </ul>
+</mat-toolbar>

@@ -1,0 +1,46 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+.info-text {
+  text-align: center;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  color: purple;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Dancing Script';
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.catalog {
+  width: 300px;
+  height: auto;
+  float: none;
+  box-shadow: 0 4px 8px 0 purple;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.catalog:hover {
+  box-shadow: 0 4px 8px 0 #C1E605;
+}
+
+.img {
+  width: 100%;
+  margin: auto;
+}
+
+

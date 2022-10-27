@@ -1,0 +1,22 @@
+<h1>CHECKOUT</h1>
+
+<h2>Thank you awesome new book owner!</h2>
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+
+<div *ngIf="userIsAuthenticated">
+  <mat-card class="catalog" *ngIf="userIsAuthenticated">
+    <mat-card-header>
+      <mat-card-title>{{ book.title }}</mat-card-title>
+    </mat-card-header>
+    <img class="img" mat-card-image [src]="book.imagePath" [alt]="book.title">
+    <mat-card-content *ngIf="userIsAuthenticated">
+        <p> ISBN: {{ book.isbn }} </p>
+        <p> Publication Date: {{ book.publicationDate}} </p>
+        <p> Author: {{ book.author }} </p>
+        <p> Publications: {{ book.publications }} </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+

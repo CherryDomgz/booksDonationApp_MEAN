@@ -1,0 +1,72 @@
+<h1>CREATE NEW ACCOUNT</h1>
+
+<mat-card class="signup">
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form (submit)="onSignup(signupForm)" #signupForm="ngForm" *ngIf="!isLoading">
+    <mat-form-field>
+      <input
+      matInput
+      type="text"
+      name="firstName"
+      ngModel
+      placeholder="Enter First Name"
+      required
+      #firstNameInput="ngModel">
+      <mat-error *ngIf="firstNameInput.invalid">Please enter your first name.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+      matInput
+      type="text"
+      name="lastName"
+      ngModel
+      placeholder="Enter Last Name"
+      required
+      #lastNameInput="ngModel">
+      <mat-error *ngIf="lastNameInput.invalid">Please enter your last name.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+      matInput
+      type="text"
+      name="userName"
+      ngModel
+      placeholder="UserName"
+      required userName
+      #userNameInput="ngModel">
+      <mat-error *ngIf="userNameInput.invalid">Please enter a valid Username.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+      matInput
+      type="date"
+      name="birthday"
+      ngModel
+      placeholder="Enter Birthday"
+      required birthday
+      #birthdayInput="ngModel">
+      <mat-error *ngIf="birthdayInput.invalid">Please enter your date of birth.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+      matInput
+      type="password"
+      name="password"
+      ngModel
+      placeholder="Password"
+      required
+      pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{6,12}"
+      #passwordInput="ngModel">
+      <mat-error *ngIf="passwordInput.invalid">Password must contain at least one number, one uppercase letter, one lowercase letter, one special character, and must be 6-12 characters.</mat-error>
+    </mat-form-field>
+    <button
+      class="submit"
+      mat-raised-button
+      type="submit"
+      *ngIf="!isLoading">
+      Sign up
+    </button>
+
+    <p> Already have an account? <a href="/Login">Login</a></p>
+  </form>
+</mat-card>
